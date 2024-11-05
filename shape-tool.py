@@ -48,22 +48,22 @@ def show_dialog(image, drawable):
     dialog.vbox.pack_start(outline_color_button, False, False, 0)
 
     # Outline Size SpinButton
-    #outline_size_label = gtk.Label("Outline Size")
-    #dialog.vbox.pack_start(outline_size_label, False, False, 0)
-    #outline_size_spin = gtk.SpinButton()
-    #outline_size_spin.set_range(1, 1000)
-    #outline_size_spin.set_increments(1, 10)
-    #outline_size_spin.set_value(5)
-    #dialog.vbox.pack_start(outline_size_spin, False, False, 0)
+    outline_size_label = gtk.Label("Outline Size")
+    dialog.vbox.pack_start(outline_size_label, False, False, 0)
+    outline_size_spin = gtk.SpinButton()
+    outline_size_spin.set_range(1, 1000)
+    outline_size_spin.set_increments(1, 10)
+    outline_size_spin.set_value(5)
+    dialog.vbox.pack_start(outline_size_spin, False, False, 0)
 
     # Feathering Option
-    #feather_label = gtk.Label("Feathering (pixels)")
-    #dialog.vbox.pack_start(feather_label, False, False, 0)
-    #feather_spin = gtk.SpinButton()
-    #feather_spin.set_range(0, 100)
-    #feather_spin.set_increments(1, 5)
-    #feather_spin.set_value(0)
-    #dialog.vbox.pack_start(feather_spin, False, False, 0)
+    feather_label = gtk.Label("Feathering (pixels)")
+    dialog.vbox.pack_start(feather_label, False, False, 0)
+    feather_spin = gtk.SpinButton()
+    feather_spin.set_range(0, 100)
+    feather_spin.set_increments(1, 5)
+    feather_spin.set_value(0)
+    dialog.vbox.pack_start(feather_spin, False, False, 0)
 
     # Rounded Outline Checkbox
     rounded_checkbox = gtk.CheckButton("Rounded Outline")
